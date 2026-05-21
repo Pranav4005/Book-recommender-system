@@ -1,9 +1,14 @@
 from book_recommendation_system.components.stage_00_data_ingestion import DataIngestion
+from book_recommendation_system.components.stage_01_data_validation import DataValidation
 
 class TrainingPipeline:
     def __init__(self):
         self.data_ingestion = DataIngestion()
+        self.data_validation = DataValidation()
 
     def start_data_ingestion(self):
         self.data_ingestion.initiate_data_ingestion()
-        
+
+
+    def start_data_validation(self):
+        self.data_validation.initiate_data_validation()
