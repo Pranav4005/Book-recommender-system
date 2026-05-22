@@ -20,3 +20,8 @@ data_transformation_config:
 model_trainer_config:
   trained_model_dir: trained_model
   trained_model_name: model.pkl
+
+recommendation_config:
+  trained_model_path: artifacts/model_trainer/model.pkl
+  book_pivot_serialized_objects: artifacts/data_transformation/book_pivot.pkl
+  final_rating_serialized_objects: artifact/data_transformation/final_rating.pkl
